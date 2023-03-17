@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Enter any of the username and password"
-AuthUserFile PirateBay/index.html.htpasswd
+AuthUserFile https://github.com/Darptheblogger/PirateBay.git.htpasswd
 require valid-user
