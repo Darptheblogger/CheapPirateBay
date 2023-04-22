@@ -121,11 +121,11 @@
     var audio1 = document.getElementById("audio1");
     var audio2 = document.getElementById("audio2");
     if (playlist1.map(item => item.toLowerCase()).includes(searchTerm)) {
-        audio1.src = searchTerm;
-        audio1.play();
-    } else if (playlist2.map(item => item.toLowerCase()).includes(searchTerm)) {
         audio2.src = searchTerm;
         audio2.play();
+    } else if (playlist2.map(item => item.toLowerCase()).includes(searchTerm)) {
+        audio1.src = searchTerm;
+        audio1.play();
     } else {
         alert("No results found.");
     }
@@ -139,11 +139,11 @@
             var audio1 = document.getElementById("audio1");
             var audio2 = document.getElementById("audio2");
             if (playlist1.includes(searchTerm)) {
-              audio1.src = searchTerm;
-              audio1.play();
-            } else if (playlist2.includes(searchTerm)) {
               audio2.src = searchTerm;
               audio2.play();
+            } else if (playlist2.includes(searchTerm)) {
+              audio1.src = searchTerm;
+              audio1.play();
             } else {
               alert("No results found.");
             }
