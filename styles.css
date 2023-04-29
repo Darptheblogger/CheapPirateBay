@@ -1,0 +1,149 @@
+/* Define the animation keyframes */
+body{
+	background-color: #1f1f1f;
+}
+@keyframes text-color {
+	0% {
+	  color: #00FF00;
+	  text-shadow: none;
+	}
+	10% {
+	  color: #FF00FF;
+	  text-shadow: 0 0 10px #FF00FF;
+	}
+	20% {
+	  color: #00FFFF;
+	  text-shadow: 0 0 10px #00FFFF;
+	}
+	30% {
+	  color: #FF0000;
+	  text-shadow: 0 0 10px #FF0000;
+	}
+	40% {
+	  color: #FFFF00;
+	  text-shadow: 0 0 10px #FFFF00;
+	}
+	50% {
+	  color: #00FF00;
+	  text-shadow: 0 0 10px #00FF00;
+	}
+	60% {
+	  color: #FF00FF;
+	  text-shadow: 0 0 10px #FF00FF;
+	}
+	70% {
+	  color: #00FFFF;
+	  text-shadow: 0 0 10px #00FFFF;
+	}
+	80% {
+	  color: #FF0000;
+	  text-shadow: 0 0 10px #FF0000;
+	}
+	90% {
+	  color: #FFFF00;
+	  text-shadow: 0 0 10px #FFFF00;
+	}
+	100% {
+	  color: #00FF00;
+	  text-shadow: none;
+	}
+  }
+  
+  /* Apply the animation to the desired elements */
+  h1, h2, h3, h4, h5, h6, p {
+	animation-name: text-color;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+  }
+  body {
+	perspective: 1000px;
+	background-color: #1f1f1f;
+  }
+  
+  @keyframes gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
+  
+  
+h2{text-align: center;}  
+.shuffle-play {
+	margin-top: 1rem;
+	text-align: center;
+  }
+  
+  .shuffle-play button {
+	background-color: #ff0000;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 9999px;
+	font-size: 1.2rem;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+	transition: transform 0.2s ease;
+  }
+  
+  .shuffle-play button:hover {
+	transform: translateY(-2px);
+  }
+ 
+  
+
+	
+  
+  
+  
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+
+img {
+	height: 80px; /* Adjust the height to your desired size */
+	margin-right: 20px;
+}
+
+h1 {
+	font-size: 2em;
+	color: #1DB954;
+	margin: 0;
+}
+
+.player {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	background-color: #1DB954;
+	color: #fff;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+button:hover {
+	background-color: #1ED760;
+}
