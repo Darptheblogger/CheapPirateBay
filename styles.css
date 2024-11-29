@@ -1,170 +1,80 @@
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #1DB954;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean font */
+    margin: 0;
+    padding: 0;
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
+    background-color: #1db954; /* Spotify green */
+    padding: 20px;
+    text-align: center;
 }
 
-.logo img {
-  width: 100px;
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
-/* Add these styles to your CSS */
 
-progress {
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background-color: #282828; /* Dark card background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card p {
+    color: #b3b3b3; /* Light gray for secondary text */
+}
+
+.button {
+    background-color: #1db954; /* Spotify green */
+    color: #ffffff;
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #1aa34a; /* Darker green on hover */
+}
+
+.footer {
+    background-color: #181818; /* Dark footer */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
     width: 100%;
-    height: 10px;
-    margin-bottom: 10px;
-}
-
-progress::-webkit-progress-bar {
-    background-color: #eee;
-    border-radius: 5px;
-}
-
-progress::-webkit-progress-value {
-    background-color: #1DB954;
-    border-radius: 5px;
-}
-
-
-p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-input[type="text"] {
-  width: 200px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-}
-
-#search-button {
-  padding: 10px 20px;
-  margin-left: 10px;
-  background-color: #1DB954;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  transition: background-color 0.3s ease;
-}
-
-#search-button:hover {
-  background-color: #198c3e;
-}
-
-.playlist {
-  margin-bottom: 40px;
-}
-
-h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-audio {
-  width: 100%;
-}
-
-.shuffle-play {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #1DB954;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #198c3e;
-}
-
-#status1,
-#status2 {
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-.alert {
-  padding: 10px;
-  background-color: #f44336;
-  color: #fff;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-/* Media Queries */
-@media (max-width: 600px) {
-  .container {
-    padding: 10px;
-  }
-
-  .header {
-    flex-direction: column;
-  }
-
-  .logo img {
-    width: 80px;
-  }
-
-  .search {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-
-  input[type="text"] {
-    width: 100%;
-  }
-
-  .shuffle-play {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
